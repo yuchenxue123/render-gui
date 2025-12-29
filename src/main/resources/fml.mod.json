@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "name": "${name}",
+  "version": "${version}",
+  "description": "${description}",
+  "authors": [
+    "yuchenxue"
+  ],
+  "depends": {
+    "fishmodloader": ">=3.4.1",
+    "kotlin-language": ">=1.0.1"
+  },
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "top.cuteneko.yuchenxue.rgui.RenderGuiMod"
+      }
+    ]
+  },
+  "mixins": [
+    "rgui.mixins.json"
+  ],
+  "accessWidener": "${widener}"
+}
